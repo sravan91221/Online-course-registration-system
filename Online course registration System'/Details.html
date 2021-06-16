@@ -1,0 +1,92 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+ <style>
+ 		.signup{
+background-color:white;
+padding:5px;
+color:#3498db;
+text-align:center;
+height:auto;
+width:auto;
+font-size:35px;
+border-radius:5px;
+border:2px solid #3498db;
+font-weight:bold;
+}
+	.signup:hover{
+	background-color:#3498db;
+	color:white;
+	border:2px solid white;
+	}
+	
+	
+	.page{
+	width:100%;
+	height:100%;
+	background-color:skyblue;
+	}
+	.detail{
+	width:50%;
+	height:auto;
+	border-style:inset;
+	background-color:white;
+	border-radius:100px 5px;
+	}
+	#p{
+	font-size:30px;
+	}	
+	
+ </style>
+</head>
+<body>
+<script>
+const searchFocus = document.getElementById('search-focus');
+const keys = [
+  { keyCode: 'AltLeft', isTriggered: false },
+  { keyCode: 'ControlLeft', isTriggered: false },
+];
+
+window.addEventListener('keydown', (e) => {
+  keys.forEach((obj) => {
+    if (obj.keyCode === e.code) {
+      obj.isTriggered = true;
+    }
+  });
+
+  const shortcutTriggered = keys.filter((obj) => obj.isTriggered).length === keys.length;
+
+  if (shortcutTriggered) {
+    searchFocus.focus();
+  }
+});
+
+window.addEventListener('keyup', (e) => {
+  keys.forEach((obj) => {
+    if (obj.keyCode === e.code) {
+      obj.isTriggered = false;
+    }
+  });
+});
+</script>
+
+<div class="input-group">
+  <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+    aria-describedby="search-addon" />
+  <button type="button" class="btn btn-outline-primary">search</button>
+</div>
+
+
+<div class="page"><center><br><br>
+	<div style="" class="detail"><br>
+		<h1>Web Development Course</h1>
+		<img src="download.jpg" class="img-responsive">
+		<p>Mr.Aakash is your tutor for this course</p>
+		<p>This course is offered for 55% off from the original price</p>
+		<p style="font-size:30px;">It will be a 6-week course</p>
+		<p style="font-size:40px;">130$</p>
+		<p>If you want to register this course</p>
+		<input class="signup" type="submit" id="signup" value="Proceed to pay"/><br><br>
+		<a href="Courses.html">Click here to go back to courses page</a><br><br><br></center>
+</body>
+</html>

@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Redirecting page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+.login-form .group{
+	margin-bottom:13px;
+}
+.login-form .group .input,
+.login-form .group .button{
+	border:none;
+	padding:15px 20px;
+	border-radius:25px;
+	background:rgba(255,255,255,.1);
+}
+.login-form .group .button{
+	background:#1161ee;
+}
+.login-form .group .label,
+.login-form .group .input,
+.login-form .group .button{
+	width:100%;
+	color:#fff;
+	display:block;
+}
+</style>
+</head>
+<body style="background-color:lightgrey;">
+<div class="header">
+ <B> <h1 style="
+
+
+  text-align:center;
+  font-size:50px;
+  color:white;
+
+  left:0;
+  text-shadow:
+    -1px 1px 0px #c4dbe2,
+    -2px 2px 0px #b4d1d9,
+    -3px 3px 0px #a6c6cf,
+    -4px 4px 0px #94b8c3,
+    -5px 5px 0px #87aeb9,
+    -6px 6px 0px #7aa3af,
+    -7px 7px 0px #6d97a3,
+    -8px 8px 0px #618b98,
+    -9px 9px 0px #56818e,
+    -10px 10px 0px #4c7683,
+    -15px 15px 25px rgba(0,0,0,.9);
+      " >User Login Page</h1></B>
+</div>
+
+<br>
+
+<form method="post">
+<div class="login-wrap" >
+	<div class="login-html">
+		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">User Login Reset</label>
+		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab"></label>
+		<div class="login-form">
+			<div class="sign-in-htm">
+				<div class="group">
+					<label for="user" class="label">Email_ID</label>
+					<input id="user" type="text" class="input" placeholder="Enter the registered mail" name="email" required>
+				</div>
+					<div class="group">
+					<label for="user" class="label">Code</label>
+					<input id="user" type="text" class="input" placeholder="Enter the code which was sent to the mail" name="email" required>
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Password</label>
+					<input id="pass" type="password" class="input" data-type="password" placeholder="Create new Password" name="password" required>
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Confirm Password</label>
+					<input id="pass" type="password" class="input" data-type="password" placeholder="Confirm your Password" name="password" required>
+				</div>
+				<br><br>
+				<form method="get" action="Stu_sign_in.html">
+				<div class="group">
+					<input type="submit" class="button" value="Continue" name="submit">
+
+				</div>
+				</form>
+			</div>
+			
+		</div>
+	</div>
+</div>
+</form>
+
+
+
+
+
+
+</body>
+</html>
